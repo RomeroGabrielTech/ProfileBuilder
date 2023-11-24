@@ -29,7 +29,7 @@ Para construir y ejecutar la aplicación necesitas:
 
 Clona el repositorio a tu máquina local:
 
-```bash
+
 git clone https://tu-repositorio.git
 
 
@@ -38,7 +38,7 @@ Navega al directorio del proyecto y construye la aplicación con Maven:
 cd profile-builder
 mvn install
 
-# Ejecutar la Aplicación
+## Ejecutar la Aplicación
 Una vez construida la aplicación, puedes ejecutarla utilizando:
 
 java -jar target/profilebuilder-0.0.1-SNAPSHOT.war
@@ -49,29 +49,31 @@ mvn spring-boot:run
 
 La aplicación se ejecutará por defecto en el puerto 8081.
 
-Acceso a la Base de Datos H2
+## Acceso a la Base de Datos H2
 Para acceder a la consola de la base de datos H2:
 
 Navega a http://localhost:8081/h2-console
 Conéctate usando la URL JDBC jdbc:h2:mem:testdb con el usuario sa y sin contraseña.
-Uso de la API
+
+## Uso de la API
 Una vez que la aplicación esté en ejecución, puedes navegar a http://localhost:8081/swagger-ui/index.html para ver la documentación de la API y probar los diferentes endpoints.
 
-Endpoints Disponibles
+## Endpoints Disponibles
 POST /api/users/register: Registro de un nuevo usuario.
 GET /api/users/{id}: Obtener un usuario por su ID.
 PUT /api/users/{id}: Actualizar un usuario existente.
 DELETE /api/users/{id}: Eliminar un usuario.
 Por favor, consulta la documentación de Swagger para más detalles sobre los parámetros y el cuerpo de las solicitudes.
 
-Contribuir
+## Contribuir
 Si deseas contribuir al proyecto, por favor, sigue estos pasos:
 
 Haz fork del repositorio.
 Crea una nueva rama con un nombre descriptivo.
 Haz tus cambios y escribe pruebas si es posible.
 Envia un pull request con una descripción clara de tus cambios.
-Licencia
+
+## Licencia
 Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE.md para más detalles.
 
 
